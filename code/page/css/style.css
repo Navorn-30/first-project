@@ -1,0 +1,674 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", serif;
+  background-color: #ebebeb;
+}
+
+header {
+  .header-section1 {
+    display: flex;
+    justify-content: space-between;
+    color: #313865;
+    padding: 10px 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: #ebebeb;
+    .menu {
+      display: flex;
+      gap: 30px;
+      p {
+        /*display: inline;*/
+        padding-top: 5px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 400ms ease-in-out;
+        &:hover {
+          color: rgb(251, 109, 109);
+          text-decoration: underline;
+          transform: translateY(-8px);
+        }
+      }
+    }
+  }
+  .header-section2 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px 70px;
+    box-shadow: 0px 48px 100px 0px rgba(17, 12, 46, 0.15);
+    position: relative;
+    top: 57px;
+    width: 100%;
+    h2 {
+      color: #313865;
+    }
+    p {
+      color: rgb(187, 181, 181);
+      padding-top: 5px;
+    }
+  }
+}
+.aside-main {
+  display: flex;
+  position: relative;
+  top: 80px;
+  aside {
+    width: 450px;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 35px 70px;
+    .bar-search {
+      display: flex;
+      button {
+        display: flex;
+        justify-content: space-between;
+        gap: 225px;
+        padding: 12px 20px;
+        border: 0;
+        border-radius: 30px;
+        color: rgb(187, 181, 181);
+        background-color: #ffffff;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+          rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        cursor: pointer;
+        i {
+          color: rgb(69, 67, 67);
+        }
+      }
+    }
+    .categories {
+      width: 325px;
+      background-color: white;
+      margin: 40px 0;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: #313865;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+      p {
+        padding: 10px 0;
+        border-bottom: 1px solid rgb(228, 227, 227);
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 400ms ease-in-out;
+        &:hover {
+          background-color: #e5e5e5;
+          padding-left: 5px;
+          border-radius: 10px;
+        }
+      }
+      .last-p {
+        border-bottom: 0;
+      }
+    }
+    .slogans {
+      width: 325px;
+      background-color: white;
+      margin: 40px 0;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: #313865;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+      .top-div {
+        display: flex;
+        gap: 10px;
+        span {
+          font-size: 35px;
+          font-weight: 600;
+          padding-top: 5px;
+        }
+        p {
+          padding: 10px;
+          border-bottom: 1px solid whitesmoke;
+          font-weight: 500;
+          font-size: 17px;
+        }
+        .p5 {
+          border-bottom: none;
+        }
+      }
+      .p1 {
+        padding-left: 10px;
+      }
+    }
+    .instagram {
+      padding-bottom: 25px;
+      color: #313865;
+    }
+    .website {
+      width: 325px;
+      height: 300px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 7px;
+      background-color: white;
+      cursor: pointer;
+      .box {
+        border: 0;
+        border-radius: 3px;
+        box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+          rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+      }
+      .box1 {
+        background-image: url(/code/page/assets/img/img1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 1000ms ease-in-out;
+        &:hover {
+          transform: scale(1.4);
+          width: 120px;
+          height: 120px;
+        }
+      }
+      .box2 {
+        background-image: url(/code/page/assets/img/img2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 1000ms ease-in-out;
+        &:hover {
+          transform: scale(1.4);
+          width: 120px;
+          height: 120px;
+        }
+      }
+      .box3 {
+        background-image: url(/code/page/assets/img/img3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 1000ms ease-in-out;
+        &:hover {
+          transform: scale(1.4);
+          width: 120px;
+          height: 120px;
+        }
+      }
+      .box4 {
+        background-image: url(/code/page/assets/img/img4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 1000ms ease-in-out;
+        &:hover {
+          transform: scale(1.4);
+          width: 120px;
+          height: 120px;
+        }
+      }
+      .box5 {
+        background-image: url(/code/page/assets/img/img5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 1000ms ease-in-out;
+        &:hover {
+          transform: scale(1.4);
+          width: 120px;
+          height: 120px;
+        }
+      }
+      .box6 {
+        background-image: url(/code/page/assets/img/img6.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 1000ms ease-in-out;
+        &:hover {
+          transform: scale(1.4);
+          width: 120px;
+          height: 120px;
+        }
+      }
+      .box7 {
+        background-image: url(/code/page/assets/img/img9.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 1000ms ease-in-out;
+        &:hover {
+          transform: scale(1.4);
+          width: 120px;
+          height: 120px;
+        }
+      }
+      .box8 {
+        background-image: url(/code/page/assets/img/img10.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 1000ms ease-in-out;
+        &:hover {
+          transform: scale(1.4);
+          width: 120px;
+          height: 120px;
+        }
+      }
+      .box9 {
+        background-image: url(/code/page/assets/img/img11.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 1000ms ease-in-out;
+        &:hover {
+          transform: scale(1.4);
+          width: 120px;
+          height: 120px;
+        }
+      }
+    }
+  }
+  main {
+    margin: 35px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    align-items: center;
+    .card-container {
+      border-radius: 7px;
+      overflow: hidden;
+      box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+        rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+      width: 300px;
+      background-color: white;
+      transition: all 1200ms linear;
+      &:hover {
+        transform: scale(1.07);
+      }
+      img {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 0;
+      }
+      .card-info {
+        padding: 5px 10px 10px 10px;
+        .card-body {
+          .intro {
+            font-weight: 200;
+            font-size: 13px;
+            padding-bottom: 3px;
+          }
+          .title {
+            padding-bottom: 7px;
+            color: rgb(43, 43, 43);
+          }
+          .text {
+            font-weight: 400;
+            font-size: 15px;
+            color: #313865;
+          }
+        }
+        hr {
+          border-top: 0;
+          border-bottom: 2px solid whitesmoke;
+          margin: 15px o;
+        }
+        .card-footer {
+          padding: 10px 0 5px 0;
+          i {
+            color: rgb(247, 111, 111);
+          }
+          a {
+            text-decoration: none;
+            color: #313865;
+            cursor: pointer;
+            padding: 3px;
+            transition: all 400ms ease-in-out;
+            &:hover {
+              background-color: #e5e5e5;
+              transform: translateY(-10px);
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+    .box-bottom {
+      display: flex;
+      gap: 10px;
+      cursor: pointer;
+      .number {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        font-weight: 500;
+        color: #313865;
+        padding-top: 5px;
+        font-size: 12px;
+        background-color: #ffffff;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        &:first-child {
+          background-color: #313865;
+          color: #ffffff;
+        }
+      }
+      .next {
+        text-align: center;
+        font-weight: 500;
+        padding: 3px 0 0 15px;
+        font-size: 17px;
+        color: #313865;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+footer {
+  position: relative;
+  top: 100px;
+  padding: 35px 70px;
+  background-color: #ffffff;
+  color: #313865;
+  display: flex;
+  gap: 120px;
+  .visit-site {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    a {
+      text-decoration: none;
+      padding-top: 50px;
+      color: rgb(221, 221, 221);
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    img {
+      width: 200px;
+    }
+  }
+  .about-us {
+    width: 300px;
+    padding-top: 20px;
+    h4 {
+      padding-bottom: 15px;
+    }
+    .inform {
+      p {
+        line-height: 2;
+        a {
+          text-decoration: none;
+          color: rgb(221, 221, 221);
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .product {
+    padding-top: 20px;
+    h4 {
+      padding-bottom: 15px;
+    }
+    .name {
+      line-height: 2.5;
+    }
+  }
+  .contact {
+    padding-top: 20px;
+    h4 {
+      padding-bottom: 15px;
+    }
+    .content {
+      line-height: 2;
+      color: #bfbcbc;
+    }
+    .social {
+      display: flex;
+      gap: 15px;
+      padding-top: 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    .header-section1 {
+      padding: 10px 20px;
+      .menu {
+        gap: 20px;
+      }
+    }
+    .header-section2 {
+      padding: 10px 20px;
+      p {
+        padding-left: 20px;
+      }
+    }
+  }
+  .aside-main {
+    aside {
+      padding: 20px 20px;
+    }
+    main {
+      gap: 20px 30px;
+    }
+  }
+  footer {
+    padding: 10px 20px;
+    gap: 70px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    .header-section1 {
+      padding: 10px 9px;
+      font-size: 14px;
+      .menu {
+        gap: 20px;
+      }
+    }
+    .header-section2 {
+      padding: 10px 9px;
+    }
+  }
+  .aside-main {
+    margin-top: 30px;
+    aside {
+      padding: 30px 9px;
+      font-size: 14px;
+      width: 245px;
+      .bar-search {
+        button {
+          gap: 140px;
+        }
+      }
+      .categories {
+        width: 245px;
+        padding: 10px 15px;
+        margin: 30px 0;
+        h2 {
+          font-size: 16px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+      .slogans {
+        width: 245px;
+        padding: 10px 15px;
+        margin: 30px 0;
+        h2 {
+          font-size: 16px;
+        }
+        .top-div {
+          span {
+            font-size: 16px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+      .instagram {
+        h2 {
+          font-size: 16px;
+        }
+      }
+      .website {
+        width: 242px;
+        height: 220px;
+        gap: 2px;
+        .box1:hover {
+          transform: scale(1.4);
+          width: 100px;
+          height: 100px;
+        }
+        .box1:hover {
+          transform: scale(1.4);
+          width: 100px;
+          height: 100px;
+        }
+        .box2:hover {
+          transform: scale(1.4);
+          width: 100px;
+          height: 100px;
+        }
+        .box3:hover {
+          transform: scale(1.4);
+          width: 100px;
+          height: 100px;
+        }
+        .box4:hover {
+          transform: scale(1.4);
+          width: 100px;
+          height: 100px;
+        }
+        .box5:hover {
+          transform: scale(1.4);
+          width: 100px;
+          height: 100px;
+        }
+        .box6:hover {
+          transform: scale(1.4);
+          width: 100px;
+          height: 100px;
+        }
+        .box7:hover {
+          transform: scale(1.4);
+          width: 100px;
+          height: 100px;
+        }
+        .box8:hover {
+          transform: scale(1.4);
+          width: 100px;
+          height: 100px;
+        }
+        .box9:hover {
+          transform: scale(1.4);
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+    main {
+      padding: 0 3px 10px 30px;
+      font-size: 14px;
+      gap: 10px;
+      .card-container {
+        width: 240px;
+        &:hover {
+          transform: scale(1.03);
+        }
+        img {
+          width: 100%;
+          height: 220px;
+        }
+        .card-info {
+          padding: 5px 10px 10px 10px;
+          .card-body {
+            .intro {
+              font-weight: 200;
+              font-size: 10px;
+              padding-bottom: 3px;
+            }
+            .title {
+              padding-bottom: 7px;
+            }
+            .text {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .box-bottom {
+        padding-left: 10px;
+        gap: 8px;
+        .number {
+          width: 20px;
+          height: 20px;
+          font-size: 10px;
+        }
+        .next {
+          font-size: 15px;
+          padding: 0 0 0 5px;
+        }
+      }
+    }
+  }
+  footer {
+    top: 90px;
+    padding: 20px 9px;
+    gap: 45px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    .header-section1 {
+      padding: 10px 20px 10px 20px;
+      font-size: 12px;
+      .menu {
+        gap: 20px;
+      }
+    }
+    .header-section2 {
+      padding: 10px 20px 10px 20px;
+      font-size: 12px;
+    }
+  }
+  .aside-main {
+    margin-top: 0;
+    gap: 15px;
+    aside {
+      padding: 30px 20px;
+      font-size: 14px;
+      width: 280px;
+      .bar-search {
+        button {
+          gap: 140px;
+        }
+      }
+    }
+    main {
+      padding: 0 3px 10px 20px;
+      font-size: 14px;
+      gap: 15px;
+      .card-container {
+        width: 270px;
+        &:hover {
+          transform: scale(1.07);
+        }
+        img {
+          width: 100%;
+          height: 220px;
+        }
+      }
+    }
+  }
+  footer {
+    top: 80px;
+    padding: 20px 20px;
+    gap: 35px;
+    font-size: 9px;
+    .visit-site {
+      img {
+        width: 120px;
+      }
+    }
+  }
+}
