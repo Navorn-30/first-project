@@ -189,8 +189,8 @@ footer {
 @media screen and (min-width: 320px) {
   header {
     .header-section1 {
-      gap: 35px;
-      justify-content: start;
+      /* gap: 35px; */
+      justify-content: space-between;
       padding: 5px;
       h1 {
         font-size: 14px;
@@ -299,7 +299,8 @@ footer {
 @media screen and (min-width: 375px) {
   header {
     .header-section1 {
-      gap: 40px;
+      /* gap: 40px; */
+      justify-content: space-between;
       padding: 8px;
       h1 {
         font-size: 16px;
@@ -390,8 +391,226 @@ footer {
 }
 
 @media screen and (min-width: 425px) {
+  header {
+    .header-section1 {
+      /* gap: 70px; */
+      justify-content: space-between;
+      padding: 10px;
+    }
+    .header-section2 {
+      padding: 10px;
+    }
+  }
+  main {
+    padding: 10px;
+    .information-img {
+      img {
+        width: 400px;
+        height: 400px;
+      }
+    }
+  }
+  footer {
+    padding: 10px;
+  }
 }
 @media screen and (min-width: 768px) {
+  header {
+    .header-section1 {
+      padding: 0 15px;
+      h1 {
+        font-size: 24px;
+      }
+      .menu {
+        font-size: 16px;
+      }
+    }
+    .header-section2 {
+      padding: 5px 15px;
+      top: 57px;
+      h2 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+  main {
+    padding: 0 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: 50px;
+    padding-bottom: 30px;
+    .information-text {
+      .about-me {
+        gap: 25px;
+        h2 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      .hobby-text {
+        gap: 25px;
+        h2 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    .information-img {
+      position: relative;
+      left: 100px;
+      order: -1;
+      img {
+        width: 500px;
+        height: 500px;
+      }
+    }
+  }
+  footer {
+    top: 60px;
+    padding: 15px;
+    padding-bottom: 50px;
+    .visit-site {
+      h3 {
+        font-size: 24px;
+      }
+      a {
+        font-size: 16px;
+      }
+    }
+    .about-us {
+      order: 4;
+      h4 {
+        font-size: 22px;
+      }
+      .inform {
+        font-size: 16px;
+      }
+    }
+    .product {
+      h4 {
+        font-size: 22px;
+      }
+      .name {
+        font-size: 16px;
+      }
+    }
+    .contact {
+      h4 {
+        font-size: 22px;
+      }
+      .content {
+        font-size: 16px;
+      }
+    }
+  }
 }
 @media screen and (min-width: 1024px) {
+  header {
+    .header-section1 {
+      padding: 10px 20px;
+    }
+    .header-section2 {
+      padding: 10px 20px;
+    }
+  }
+  main {
+    padding: 10px 20px;
+    top: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .information-text {
+      width: 50%;
+    }
+    .information-img {
+      width: 45%;
+      order: 0;
+      left: 0;
+      img {
+        width: 450px;
+        height: 550px;
+      }
+    }
+  }
+  footer {
+    top: 120px;
+    padding: 40px 20px;
+    flex-direction: row;
+    gap: 30px;
+    .visit-site {
+      a {
+        padding-top: 50px;
+      }
+    }
+    .about-us {
+      order: 0;
+      width: 250px;
+      .inform {
+        padding-top: 12px;
+      }
+    }
+    .product {
+      .name {
+        padding-top: 10px;
+      }
+    }
+    .contact {
+      .content {
+        padding-top: 10px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  header {
+    .header-section1 {
+      padding: 10px 70px;
+      .menu {
+        gap: 30px;
+      }
+    }
+    .header-section2 {
+      padding: 10px 70px;
+    }
+  }
+  main {
+    gap: 30px;
+    padding: 0 70px;
+    margin-bottom: 30px;
+    .information-text {
+      .about-me {
+        gap: 30px;
+      }
+      .hobby-text {
+        gap: 30px;
+        h2 {
+          margin-top: 30px;
+        }
+      }
+    }
+    .information-img {
+      img {
+        width: 650px;
+        height: 700px;
+      }
+    }
+  }
+  footer {
+    padding: 35px 70px;
+    gap: 120px;
+    .visit-site {
+      a {
+        padding-top: 50px;
+      }
+    }
+    .about-us {
+      width: 290px;
+    }
+  }
 }
